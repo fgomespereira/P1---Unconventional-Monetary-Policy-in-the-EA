@@ -10,7 +10,7 @@ myfile <- getURL("https://raw.githubusercontent.com/fgomespereira/P1---Unconvent
 panel1 <- read.csv(text = myfile)
 tmp2 <- panel1
 
-# APP_DUMMY setting
+# APP_DUMMY (pre-treatment 2012-2014 / post-treatment 2015-2018)
 tmp2$app_dummy <- ifelse(tmp2$Year==2015 |
                            tmp2$Year==2016 |
                            tmp2$Year==2017 |
